@@ -11,15 +11,18 @@
 <?php full_below_content_area(); ?>
 			
 			<footer id="site-footer" role="contentinfo">
-				<div class="container">
-					<div id="footer-row" class="row site-footer">
-						<?php get_sidebar('footerone'); ?>
-						<?php get_sidebar('footertwo'); ?>
-						<?php get_sidebar('footerthree'); ?>
-						<?php get_sidebar('footerfour'); ?>
+				<div class="footer-section pad-40">
+					<div class="container">
+						<div id="footer-row" class="row site-footer">
+							<?php get_sidebar('footerone'); ?>
+							<?php get_sidebar('footertwo'); ?>
+							<?php get_sidebar('footerthree'); ?>
+							<?php get_sidebar('footerfour'); ?>
+						</div>
 					</div>
 				</div>
-				<div id="footer-row" class="row site-footer footer-bottom">
+
+				<div class="copyright">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6 footer-left padtop-10">
@@ -38,6 +41,8 @@
 						</div>
 					</div>
 				</div>
+
+
 			</footer>
 
 		
