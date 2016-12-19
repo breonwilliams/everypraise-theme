@@ -858,8 +858,9 @@ nav.affix {
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
 	border: none;
-	background: #0C7883;
+	background: #292728;
 	cursor: pointer;
+	color: #B6E0D8!important;
 }
 
 .navbar-nav > li > a {
@@ -1735,7 +1736,7 @@ ul.post_tag li {
 	margin: 0 10px 0 0;
 }
 ul.post_tag li a {
-	border: 2px solid rgb(235, 34, 39);
+	border: 2px solid rgb(30, 88, 94);
 	font-family:'Montserrat' !important;
 	padding: 4px 8px;
 	font-size: 10px;
@@ -2437,7 +2438,7 @@ img.rounded, .rounded {
 .social-icon a:hover,
 .social-icon a:focus,
 .social-icon a:active {
-	color: rgb(235, 34, 39);
+	color: rgb(30, 88, 94);
 }
 
 @media (max-width:767px) {
@@ -2519,7 +2520,7 @@ h4.media-heading {
 	color:#3b3b3b;
 }
 .media-heading > .user:hover, .media-heading > .user:focus, .media-heading > .user:active {
-	color:rgb(235, 34, 39);
+	color:rgb(30, 88, 94);
 }
 .media > .pull-left {
 	margin-right:15px;
@@ -2586,7 +2587,7 @@ Upcoming Events
 	border-bottom: solid 1px #222;
 }
 .event-date {
-	background: rgb(235, 34, 39);
+	background: rgb(30, 88, 94);
 	color: #fff;
 	margin-top: 6px;
 	padding: 0 5px;
@@ -2663,7 +2664,7 @@ img {
 	color: #292728;
 }
 .client-single h3 a:hover {
-	color: rgb(235, 34, 39);
+	color: rgb(30, 88, 94);
 }
 .client-avi {
 	float: left;
@@ -2735,7 +2736,7 @@ Seminar Dates
 	line-height: 30px;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: rgb(235, 34, 39);
+	background-color: rgb(30, 88, 94);
 }
 .date-list time .date {
 	display: block;
@@ -2920,7 +2921,7 @@ Star Rating
 
 .rating > input:checked ~ label, /* show gold star when clicked */
 .rating:not(:checked) > label:hover, /* hover current star */
-.rating:not(:checked) > label:hover ~ label { color: rgb(235, 34, 39);  } /* hover previous stars in list */
+.rating:not(:checked) > label:hover ~ label { color: rgb(30, 88, 94);  } /* hover previous stars in list */
 
 .rating > input:checked + label:hover, /* hover current star when changing rating */
 .rating > input:checked ~ label:hover,
@@ -2950,7 +2951,7 @@ Member Activity Comments
 	width: 100%;
 	padding: 10px;
 	vertical-align: top;
-	border: solid 1px rgb(235, 34, 39);
+	border: solid 1px rgb(30, 88, 94);
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -3031,7 +3032,7 @@ Pagination
 .pagination > .active > a,
 .pagination>li>span,
 .pagination>li.active>span {
-	color: rgb(235, 34, 39);
+	color: rgb(30, 88, 94);
 	background-color: transparent;
 	border-radius: 0;
 }
@@ -3050,7 +3051,7 @@ Pagination
 .pagination .active a:hover,
 .pagination>li>span:hover,
 .pagination>li.active>span:hover{
-	color: rgb(235, 34, 39);
+	color: rgb(30, 88, 94);
 	background-color: transparent;
 }
 .pagination > .disabled a {
@@ -3076,42 +3077,43 @@ Text Color
 }
 
 .text-dark {
-	color: #000!important;
+	color: #292728!important;
 }
-.text-blue {
+.text-light {
 	color: #B6E0D8!important;
 }
-.text-yellow {
+.text-cream {
 	color: #EED0B5!important;
 }
-.text-darkBlue {
+.text-primary {
 	color: #0C7883!important;
 }
 
 /*
 Full Width Sections
 ================================== */
-.section-grey {
-	background-color: #f7f7f7;
+.section-primary {
+	background-color: #1E585E;
 }
 
-.section-red {
+.section-secondary {
 	background-color: #0C7883;
-	color: #fff;
 }
 
-.section-blue {
-	background-color: #3766c7;
-	color: #fff;
+.section-dark {
+	background-color: #292728;
 }
 
-.section-green {
-	background-color: #5DB65B;
-	color: #fff;
+.section-light {
+	background-color: #B6E0D8;
 }
 
-.section-yellow {
-	background-color: #D3AA2E;
+.section-grey {
+	background-color: #E5E4E1;
+}
+
+.section-cream {
+	background-color: #EED0B5;
 }
 .section-large {
 	padding: 70px 0;
@@ -3131,31 +3133,31 @@ Full Width Sections
 }
 
 .overlay-grey {
-	background: rgba(238,238,238,.7);
+	background: rgba(229,228,225,.7);
 }
 
 .overlay-dark {
-	background: rgba(0,0,0,.7);
+	background: rgba(41,39,40,.7);
 	color: #fff;;
 }
 
-.overlay-red {
+.overlay-primary {
 	background: rgba(12,120,131,.7);
 	color: #fff;
 }
 
-.overlay-blue {
-	background: rgba(55,102,199,.7);
+.overlay-secondary {
+	background: rgba(30,88,94,.7);
 	color: #fff;
 }
 
-.overlay-green {
-	background: rgba(93,182,91,.7);
+.overlay-light {
+	background: rgba(182,224,216,.7);
 	color: #fff;
 }
 
-.overlay-yellow {
-	background: rgba(211,170,46,.7);
+.overlay-cream {
+	background: rgba(238,208,181,.7);
 	color: #fff;
 }
 
@@ -3212,7 +3214,7 @@ Plan Section
 	box-shadow: 0 6px 12px rgba(0,0,0,.015);
 }
 .plan:hover .plan-title {
-	color: rgb(235, 34, 39);
+	color: rgb(30, 88, 94);
 	-webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out;
 }
 .plan-featured-overlay {
@@ -3223,7 +3225,7 @@ Plan Section
 	height: 0;
 	border-style: solid;
 	border-width: 0 50px 50px 0;
-	border-color: transparent rgb(235, 34, 39) transparent transparent;
+	border-color: transparent rgb(30, 88, 94) transparent transparent;
 }
 .plan-featured {
 	position: absolute;
@@ -3235,7 +3237,7 @@ Plan Section
 .plan-price {
 	font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 40px;
-	color: rgb(235, 34, 39);
+	color: rgb(30, 88, 94);
 	margin-bottom: 20px;
 }
 
@@ -3590,7 +3592,7 @@ Footer
 
 .footer-social,
 .header-social{
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 }
 
 .header-social a i.fa {
