@@ -235,6 +235,10 @@ h6 {
 	letter-spacing: -0.2px;
 }
 
+#fittext1, #fittext2, #fittext3, #fittext4 {
+	line-height: normal;
+}
+
 .site-section__title {
 	overflow: hidden;
 	text-align: center;
@@ -314,6 +318,77 @@ input, select, textarea {
 	margin: 0;
 	outline: 0;
 	vertical-align: baseline;
+}
+
+/* Login Form */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+#loginform input[type="text"],
+#loginform input[type="password"],
+input[type="text"].password-reset,
+input[type="text"].wpcf7-form-control,
+input[type="email"].wpcf7-form-control {
+	display: block;
+	width: 100%;
+	border: 1px solid #D4D9E2;
+	border-radius: 3px;
+	height: 50px;
+	padding: 15px;
+	font-size: 16px;
+	color: #596377;
+	outline: 0;
+	-webkit-transition: border-color .2s ease;
+	transition: border-color .2s ease;
+}
+
+label[for="user_login"]{
+	width:100%;
+}
+
+textarea.wpcf7-form-control{
+	display: block;
+	width: 100%;
+	border: 1px solid #D4D9E2;
+	border-radius: 3px;
+	padding: 15px;
+	font-size: 16px;
+	color: #596377;
+	outline: 0;
+	-webkit-transition: border-color .2s ease;
+	transition: border-color .2s ease;
+}
+
+input[type="submit"],
+button[type="submit"],
+#loginform input[type="submit"],
+input[type="submit"].wpcf7-submit {
+	display: inline-block;
+	background: #292728;
+	height: 42px;
+	line-height: normal;
+	padding: 0px 30px;
+	color: #fff;
+	cursor: pointer;
+	-webkit-transition: box-shadow .2s ease,border .2s ease;
+	transition: box-shadow .2s ease,border .2s ease;
+	border: none;
+	font-weight: 600;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.wpcf7-form label {
+	width: 100%;
+}
+
+.wp-user-form {
+	width: 100%;
 }
 
 .header-top-area .bootstrap-select.btn-group:not(.input-group-btn),
@@ -2985,6 +3060,31 @@ Pagination
 .pagination>li>span:hover,
 .pagination>li.active>span:hover {
 	background: transparent;
+}
+
+/*
+Text Color
+================================== */
+
+.text-white {
+	color: #ffffff!important;
+}
+
+.text-grey {
+	color: #E5E4E1!important;
+}
+
+.text-dark {
+	color: #000!important;
+}
+.text-blue {
+	color: #B6E0D8!important;
+}
+.text-yellow {
+	color: #EED0B5!important;
+}
+.text-darkBlue {
+	color: #0C7883!important;
 }
 
 /*
