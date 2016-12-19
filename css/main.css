@@ -1767,11 +1767,11 @@ Tables
 	padding:5px !important;
 }
 .table-1 {
-	border-bottom:1px solid #000;
+	border-bottom:1px solid #292728;
 }
 
 .table-1 th {
-	background-color: #000;
+	background-color: #292728;
 	color:#fff;
 	border-bottom:none;
 }
