@@ -11,7 +11,7 @@
 <?php full_below_content_area(); ?>
 			
 			<footer id="site-footer" role="contentinfo">
-				<div class="footer-section pad-40">
+				<div class="footer-section pad-50">
 					<div class="container">
 						<div id="footer-row" class="row site-footer">
 							<?php get_sidebar('footerone'); ?>

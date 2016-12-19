@@ -35,8 +35,8 @@ Typography
 body {
 	background:#fff;
 	font-family: 'Karla', sans-serif;
-	font-size:16px;
-	line-height:24px;
+	font-size:18px;
+	line-height:28px;
 	color:#292728;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -202,7 +202,7 @@ h6 {
 	font-weight: 700;
 	letter-spacing: -0.5px;
 	font-family: 'Poppins', sans-serif;
-	color: #191919;
+	color: #292728;
 }
 h1 {
 	font-size: 28px;
@@ -235,20 +235,28 @@ h6 {
 	letter-spacing: -0.2px;
 }
 
-.hdr-rounded {
-	background: rgb(235, 34, 39);
-	color: ##fff;
-	display: inline-block;
-	padding: 10px 0 0;
-	position: relative;
-	z-index: 1;
-	border-radius: 50%;
-	width: 52px;
-	height: 52px;
-	color: #fff;
-	margin: 0 0 30px;
-	border: solid 5px rgba(255, 255, 255, .4);
+.site-section__title {
+	overflow: hidden;
 	text-align: center;
+}
+.site-section__title::before {
+	right: 0.5em;
+	margin-left: -50%;
+}
+
+.site-section__title::before, .site-section__title::after {
+	content:"";
+	display: inline-block;
+	height: 0;
+	position: relative;
+	vertical-align: middle;
+	width: 50%;
+	border-top: 1px solid #B6E0D8;
+}
+
+.site-section__title::after {
+	left: 0.5em;
+	margin-right: -50%;
 }
 
 .title-medium {
@@ -455,7 +463,7 @@ Thumbnail
 }
 
 .thumbnail h3 a {
-	color: #191919;
+	color: #292728;
 }
 
 .thumbnail h3 a:hover {
@@ -1176,8 +1184,8 @@ Button
 .btn-primary.active:focus,
 .btn-primary.active:hover,
 .btn-primary.active:hover {
-	background-color: #bc1d2a;
-	border-color: #bc1d2a;
+	background-color: #1E585E;
+	border-color: #1E585E;
 }
 
 .btn-green {
@@ -1198,8 +1206,32 @@ Button
 	border-color: #69bd67;
 }
 
-.btn-green.btn-bordered{
+.btn-white.btn-bordered{
 	color: #69bd67;
+	background:none;
+	box-shadow: none;
+}
+
+.btn-white {
+	color: #292728;
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
+}
+
+.btn-white:focus,
+.btn-white.focus,
+.btn-white:hover,
+.btn-white.btn-bordered:focus,
+.btn-white.btn-bordered.focus,
+.btn-white.open .btn-green:focus,
+.btn-white.btn-bordered:hover{
+	color: #0C7883;
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
+}
+
+.btn-white.btn-bordered{
+	color: #FFFFFF;
 	background:none;
 	box-shadow: none;
 }
@@ -1237,7 +1269,7 @@ Button
 
 .btn-link:hover,
 .btn-link:focus {
-	color: #e44b4b;
+	color: #B6E0D8;
 	text-decoration: none;
 }
 
@@ -1261,12 +1293,12 @@ Button
 .btn-group.open .btn-red:focus,
 .btn-red.btn-bordered:hover{
 	color: #fff;
-	background: #e44b4b;
-	border-color: #e44b4b;
+	background: #B6E0D8;
+	border-color: #B6E0D8;
 }
 
 .btn-red.btn-bordered{
-	color: #e44b4b;
+	color: #B6E0D8;
 	background:none;
 	box-shadow: none;
 }
@@ -1500,7 +1532,7 @@ Hover background color
 .btn-primary:hover,
 .btn-group.open .btn-primary:focus,
 .zoom a:hover {
-	background:#eb5858;
+	background:#1E585E;
 }
 
 .btn-primary.active.focus,
@@ -1513,8 +1545,8 @@ Hover background color
 .open>.dropdown-toggle.btn-primary:focus,
 .open>.dropdown-toggle.btn-primary:hover {
 	color: #fff;
-	background-color: #eb5858;
-	border-color: #eb5858;
+	background-color: #1E585E;
+	border-color: #1E585E;
 }
 
 /*
@@ -1523,7 +1555,7 @@ Hover border color
 .btn-primary:focus,
 .btn-primary.focus,
 .btn-primary:hover {
-	border-color:#eb5858;
+	border-color:#1E585E;
 }
 
 /* Tabs */
@@ -1633,7 +1665,7 @@ ul.post_tag li a {
 	font-size: 10px;
 }
 ul.post_tag li a {
-	color: #eb5858;
+	color: #1E585E;
 	text-decoration: none;
 	cursor: pointer;
 	-webkit-transition: color 0.15s ease-in-out 0s;
@@ -2552,7 +2584,7 @@ img {
 	font-size: 14px;
 }
 .client-single h3 a {
-	color: #191919;
+	color: #292728;
 }
 .client-single h3 a:hover {
 	color: rgb(235, 34, 39);
@@ -2817,7 +2849,7 @@ Star Rating
 .rating > input:checked + label:hover, /* hover current star when changing rating */
 .rating > input:checked ~ label:hover,
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label { color: #e44b4b;  }
+.rating > input:checked ~ label:hover ~ label { color: #B6E0D8;  }
 
 /*
 Member Activity Comments
@@ -3028,6 +3060,28 @@ Full Width Sections
 
 .color-on-img {
 	color: #fff !important;
+}
+
+.fill-height {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-item .height-100 {
+	flex: 1;
+}
+
+.fullscreen-center {
+	display: -webkit-flexbox!important;
+	display: -ms-flexbox!important;
+	display: -webkit-flex!important;
+	display: flex!important;
+	-webkit-flex-align: center!important;
+	-ms-flex-align: center!important;
+	-webkit-align-items: center!important;
+	align-items: center!important;
+	justify-content: center!important;
+	height: 100%;
 }
 
 
@@ -3326,9 +3380,9 @@ Footer
 }
 .copyright {
 	font-size: 14px;
-	padding: 10px 0;
+	padding: 20px 0;
 	background: #0C7883;
-	color: #B6E0D8;
+	color: #FFFFFF;
 }
 
 .copyright small {
@@ -3355,11 +3409,11 @@ Footer
 }
 
 .foot-menu li a {
-	color: #B6E0D8;
+	color: #fff;
 }
 
 .foot-menu li.active a {
-	color: #fff;
+	color: #B6E0D8;
 }
 
 .footer-section a {
