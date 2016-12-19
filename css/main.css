@@ -27,7 +27,7 @@ CSS structure
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 @import url(https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 
 /*
 Typography
@@ -35,9 +35,9 @@ Typography
 body {
 	background:#fff;
 	font-family: 'Karla', sans-serif;
-	font-size:15px;
+	font-size:16px;
 	line-height:24px;
-	color:#5c5c5c;
+	color:#292728;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
@@ -201,7 +201,7 @@ h6 {
 	margin-bottom: 10px;
 	font-weight: 700;
 	letter-spacing: -0.5px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: #191919;
 }
 h1 {
@@ -274,7 +274,7 @@ h6 {
 	display: block;
 	height: 1px;
 	width: 35px;
-	border-top: 2px solid #eb221d;
+	border-top: 2px solid #0C7883;
 	margin: 6px 0 10px;
 }
 
@@ -351,7 +351,7 @@ Blockquote
 blockquote {
 	border: none;
 	background: #f9fafb;
-	border-left: 60px solid #eb221d;
+	border-left: 60px solid #0C7883;
 	padding: 20px;
 	position: relative;
 	margin-top: 20px;
@@ -459,7 +459,7 @@ Thumbnail
 }
 
 .thumbnail h3 a:hover {
-	color: rgb(235,34,39);
+	color: #0C7883;
 }
 
 .view {
@@ -564,7 +564,7 @@ Header
 
 .header-mid-area {
 	padding: 15px 0;
-	background: #0b0b0b;
+	background: #292728;
 }
 
 .header-mid-area .logo img {
@@ -626,7 +626,7 @@ Header
 	margin-left: 20px;
 	color: #d5d5d5;
 }
-.top-menu ul li a:hover{color: #eb221d;}
+.top-menu ul li a:hover{color: #0C7883;}
 
 /*
 Navigation
@@ -634,7 +634,7 @@ Navigation
 .navbar {
 	border: none;
 	border-radius: 0;
-	background: #0b0b0b;
+	background: #292728;
 	z-index: 999;
 	width: 100%;
 	margin-bottom: 0;
@@ -723,14 +723,14 @@ nav.affix {
 .dropdown-menu>.active>a,
 .dropdown-menu>.active>a:focus,
 .dropdown-menu>.active>a:hover {
-	background:rgb(235,34,39);
+	background:#0C7883;
 	border: none;
 }
 
 .navbar-nav .dropdown-menu > .open > a,
 .navbar-nav .dropdown-menu > .open > a:hover,
 .navbar-nav .dropdown-menu > .open > a:focus {
-	background:rgb(235,34,39);
+	background:#0C7883;
 	border: none;
 }
 
@@ -774,7 +774,7 @@ nav.affix {
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
 	border: none;
-	background: rgb(235,34,39);
+	background: #0C7883;
 	cursor: pointer;
 }
 
@@ -829,7 +829,7 @@ nav.affix {
 
 .navbar-nav .dropdown-menu li > a:hover {
 	border:none;
-	background-color: rgb(235,34,39);
+	background-color: #0C7883;
 }
 
 
@@ -1077,7 +1077,7 @@ Megamenu
 .navbar-nav .yamm-link li a:focus{
 	text-decoration:none;
 	border:none;
-	color: rgb(235,34,39);
+	color: #0C7883;
 }
 @media (max-width: 969px) {
 	.yamm .dropdown.yamm-fullwidth .dropdown-menu {
@@ -1138,12 +1138,12 @@ Button
 
 .btn-default {
 	color: #fff;
-	background: #0b0b0b;
-	border-color: #0b0b0b;
+	background: #292728;
+	border-color: #292728;
 }
 
 .btn-default.btn-bordered{
-	color: #0b0b0b;
+	color: #292728;
 	background:none;
 	box-shadow: none;
 }
@@ -1230,7 +1230,7 @@ Button
 
 .btn-link {
 	font-weight: 400;
-	color: rgb(235,34,39);
+	color: #0C7883;
 	border-radius: 0;
 	box-shadow: none;
 }
@@ -1244,8 +1244,8 @@ Button
 .btn-red,
 .navbar-collapse form[role="search"] button[type="reset"] {
 	color: #fff;
-	background: rgb(235,34,39);
-	border-color: rgb(235,34,39);
+	background: #0C7883;
+	border-color: #0C7883;
 }
 
 .navbar-collapse form[role="search"] button[type="submit"] {
@@ -1363,7 +1363,7 @@ ul.tags li a:hover,
 .about-caption span,
 .pagination>li>span,
 .pagination>li.active>span{
-	color:rgb(235,34,39);
+	color:#0C7883;
 }
 
 /*
@@ -1428,7 +1428,7 @@ div.pp_default .pp_contract:hover,
 .demo-panel h6,
 a.openpanel,
 .heading .linner{
-	background:rgb(235,34,39);
+	background:#0C7883;
 }
 
 /*
@@ -1485,11 +1485,11 @@ a:hover .media-object,
 .pagination>li.active>span,
 .pagination>li>span:hover,
 .pagination>li.active>span:hover{
-	border-color:rgb(235,34,39);
+	border-color:#0C7883;
 }
 
 .pricing-wrapper{
-	border-top-color:rgb(235,34,39);
+	border-top-color:#0C7883;
 }
 
 /*
@@ -1563,7 +1563,7 @@ Hover border color
 
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
-	color: rgb(235,34,39);
+	color: #0C7883;
 	background-color: transparent;
 	border: none;
 	border-top:2px solid #3b3b3b;
@@ -1606,7 +1606,7 @@ Hover border color
 
 	.nav-tabs > li > a:hover,
 	.nav-tabs > li > a:focus {
-		color: rgb(235,34,39);
+		color: #0C7883;
 		background-color: transparent;
 		border-left:2px solid #3b3b3b;
 		border-top:none;
@@ -1643,7 +1643,7 @@ ul.post_tag li a {
 }
 
 ul.post_tag li a:hover {
-	color: rgb(235,34,39);
+	color: #0C7883;
 }
 
 /*
@@ -1667,10 +1667,10 @@ Tables
 	border-bottom:none;
 }
 .table-1.table-main-color {
-	border-bottom:1px solid rgb(235,34,39);
+	border-bottom:1px solid #0C7883;
 }
 .table-1.table-main-color th {
-	background-color: rgb(235,34,39);
+	background-color: #0C7883;
 	color:#fff;
 }
 
@@ -1679,7 +1679,7 @@ Tables
 }
 
 .table .btn-link:hover {
-	color: rgb(235,34,39);
+	color: #0C7883;
 }
 
 /*
@@ -1791,7 +1791,7 @@ Panels
 }
 
 .panel-default>.panel-heading {
-	background: #0b0b0b;
+	background: #292728;
 }
 
 .panel-default>.panel-heading .panel-title {
@@ -2005,7 +2005,7 @@ Form
 }
 
 .modal-header {
-	background: rgb(235,34,39);
+	background: #0C7883;
 }
 
 /*
@@ -2034,7 +2034,7 @@ Alerts
 }
 .alert.alert-dismissable .close:hover,
 .alert.alert-dismissable .close:focus {
-	color: rgb(235,34,39);
+	color: #0C7883;
 	opacity: 1;
 }
 .alert-modal {
@@ -2963,7 +2963,7 @@ Full Width Sections
 }
 
 .section-red {
-	background-color: rgb(235,34,39);
+	background-color: #0C7883;
 	color: #fff;
 }
 
@@ -3007,7 +3007,7 @@ Full Width Sections
 }
 
 .overlay-red {
-	background: rgba(235,34,39,.7);
+	background: rgba(12,120,131,.7);
 	color: #fff;
 }
 
@@ -3193,7 +3193,7 @@ Progress Bars
 }
 
 .progress-bar-red {
-	background: #EB221D;
+	background: #0C7883;
 }
 
 .progress-bar-yellow {
@@ -3217,10 +3217,9 @@ Footer
 ================================== */
 
 .footer-section {
-	border-bottom: 1px solid #0f0f0f;
-	background: #222222;
-	color: #aaaaaa;
-	font-size: 14px;
+	background: #1E585E;
+	color: #fff;
+	font-size: 16px;
 	font-weight: 400;
 }
 
@@ -3326,15 +3325,14 @@ Footer
 	margin-top: 35px!important;
 }
 .copyright {
-	border-top: 1px solid #363636;
-	font-size: 12px;
+	font-size: 14px;
 	padding: 10px 0;
-	background: #1d1d1d;
-	color: #7f7f7f;
+	background: #0C7883;
+	color: #B6E0D8;
 }
 
 .copyright small {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .copyright .menu {
@@ -3357,7 +3355,7 @@ Footer
 }
 
 .foot-menu li a {
-	color: #959595;
+	color: #B6E0D8;
 }
 
 .foot-menu li.active a {
@@ -3365,7 +3363,7 @@ Footer
 }
 
 .footer-section a {
-	color: #aaaaaa;
+	color: #B6E0D8;
 	font-weight: 400;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
@@ -3378,7 +3376,7 @@ Footer
 
 .footer-social a:hover i.fa,
 .header-social a:hover i.fa {
-	background: rgb(235,34,39);
+	background: #0C7883;
 	color: #fff;
 	font-weight: 400;
 	-webkit-transition: all 0.3s;
@@ -3389,7 +3387,7 @@ Footer
 	color: #fff;
 	font-size: 16px;
 	margin-bottom: 15px;
-	font-weight: 500;
+	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
@@ -3493,7 +3491,7 @@ Footer
 
 .tweet-date {
 	font-size: 11px;
-	color: rgb(235,34,39);
+	color: #0C7883;
 }
 
 .tweet {
