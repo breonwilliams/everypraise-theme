@@ -3,7 +3,7 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<div class="entry-meta padbot-20">
-			<?php bootstrapBasicPostOn(); ?> 
+			Posted on <?php echo get_the_date('D, F jS, Y'); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
