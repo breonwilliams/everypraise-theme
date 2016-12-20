@@ -1,6 +1,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('padbot-40'); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+		<div class="list-item-title">
+			<h2><a href="<?php the_permalink(); ?>" alt="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+			<a href="<?php the_permalink(); ?>" class="btn btn-default btn-bordered">More Info</a>
+		</div>
 
 		<?php if ('post' == get_post_type()) { ?> 
 		<div class="entry-meta padbot-20">

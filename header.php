@@ -32,36 +32,19 @@
 		
 		
 			<?php do_action('before'); ?>
-			<header class="header-wrap" role="banner">
+			<header id="site-header" role="banner">
 				<div class="header-mid-area">
 					<div class="container">
 						<div class="row row-with-vspace site-branding">
 							<div class="col-xs-6 site-title">
-								<?php if ( get_theme_mod( 'm1_logo' ) ) : ?>
-									<div class="logo">
-										<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-
-											<img src="<?php echo get_theme_mod( 'm1_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-
-										</a>
+								<?php if (is_active_sidebar('header-left')) { ?>
+									<div class="pull-left">
+										<?php dynamic_sidebar('header-left'); ?>
 									</div>
-								<?php else : ?>
-
-									<h1 class="site-title-heading">
-										<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
-									</h1>
-
-								<?php endif; ?>
-								<div class="site-description">
-									<small>
-										<?php bloginfo('description'); ?>
-									</small>
-								</div>
+									<div class="clearfix"></div>
+								<?php } // endif; ?>
 							</div>
 							<div class="col-xs-6 page-header-top-right">
-								<div class="sr-only">
-									<a href="#content" title="<?php esc_attr_e('Skip to content', 'bootstrap-basic'); ?>"><?php _e('Skip to content', 'bootstrap-basic'); ?></a>
-								</div>
 								<?php if (is_active_sidebar('header-right')) { ?>
 									<div class="pull-right">
 										<?php dynamic_sidebar('header-right'); ?>
@@ -72,27 +55,27 @@
 						</div><!--.site-branding-->
 					</div>
 				</div>
-				
-				<div class=" main-navigation">
-						<nav class="navbar navbar-custom" role="affix">
-							<div class="container">
-								<div class="row">
-									<div class="navbar-header">
-										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
-											<span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-										</button>
-									</div>
 
-									<div class="collapse navbar-collapse navbar-primary-collapse">
-										<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?>
-										<?php dynamic_sidebar('navbar-right'); ?>
-									</div><!--.navbar-collapse-->
+				<div class=" main-navigation respMenu">
+					<div class="container">
+						<div class="row">
+						<nav id='cssmenu' role="affix">
+							<?php if ( get_theme_mod( 'm1_logo' ) ) : ?>
+								<div class="logo">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+										<img src="<?php echo get_theme_mod( 'm1_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+									</a>
 								</div>
-							</div>
+							<?php else : ?>
+								<div class="logo"><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home" class="logo-text"><?php bloginfo('name'); ?></a></div>
+							<?php endif; ?>
+							<div id="head-mobile"></div>
+							<div class="button"></div>
+							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false ) ); ?>
 						</nav>
+					</div>
+					</div>
+					<div class="clearfix"></div>
 				</div><!--.main-navigation-->
 			</header>
 		<?php full_above_content_area(); ?>

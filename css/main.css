@@ -28,6 +28,8 @@ CSS structure
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 @import url(https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Neuton:400,400i,700,800');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&subset=latin-ext');
 
 /*
 Typography
@@ -199,9 +201,9 @@ h5,
 h6 {
 	margin-top: 0;
 	margin-bottom: 10px;
-	font-weight: 700;
+	font-weight: 400;
 	letter-spacing: -0.5px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Abril Fatface', cursive;
 	color: #292728;
 }
 h1 {
@@ -238,6 +240,79 @@ h6 {
 #fittext1, #fittext2, #fittext3, #fittext4 {
 	line-height: normal;
 }
+
+.list-item-title {
+	border-bottom: 1px solid #292728;
+	position: relative;
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+
+.list-item-title h2 {
+	font-size: 46px;
+	line-height: 46px;
+}
+
+.list-item-title h2 {
+	margin: 0 0 20px 0;
+}
+
+.list-item-title h2 a {
+	color:#292728;
+}
+
+.list-item-title h2 a:hover {
+	color:#0C7883;
+}
+
+.list-item-title .btn {
+	position: absolute;
+	right: 0;
+	bottom: -20px;
+	background-color: #fff!important;
+}
+
+.list-item-title .btn:hover {
+	background-color: #292728!important;
+}
+
+.btn.btn--sm {
+	display: inline-block;
+}
+
+.btn {
+	display: block;
+	color: #292728;
+	border: 1px solid #292728;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	padding: 20px 40px;
+}
+
+@media (max-width: 680px) {
+	.list-item-title .btn {
+		bottom: auto;
+		top: 0;
+	}
+}
+
+@media (max-width: 580px) {
+	.list-item-title h2 {
+		font-size: 38px;
+		line-height: 38px;
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	.btn {
+		font-size: 16px;
+		padding: 16px 25px;
+	}
+}
+
 
 .site-section__title {
 	overflow: hidden;
@@ -497,7 +572,7 @@ img {
 Jumbotron
 =========================== */
 .jumbotron {
-	background-color: #f9f9f9;
+	background-color: #B6E0D8;
 	margin: 0;
 }
 
@@ -646,9 +721,8 @@ Header
 =========================== */
 
 .header-mid-area {
-	padding: 15px 0;
+	/*padding: 15px 0;*/
 	background: #fff;
-	color: #FFFFFF;
 }
 
 .header-mid-area .logo img {
@@ -2403,7 +2477,7 @@ img.rounded, .rounded {
 @media only screen and (min-width: 767px) {
 
 	.entry-meta {
-		font-size: 14px;
+		font-size: 16px;
 	}
 }
 
@@ -3544,11 +3618,10 @@ Footer
 
 .ft-title {
 	color: #fff;
-	font-size: 16px;
+	font-size: 22px;
 	margin-bottom: 15px;
 	font-weight: 700;
 	letter-spacing: 1px;
-	text-transform: uppercase;
 }
 
 .ft-title:after {
@@ -3568,6 +3641,20 @@ Footer
 	display: block;
 	position: relative;
 	z-index: 1;
+}
+
+.section-heading {
+	font-size: 58px;
+	line-height: 56px;
+}
+
+.section-heading:after {
+	content: '';
+	display: block;
+	width: 96px;
+	height: 2px;
+	margin: 34px 0 30px;
+	background-color: #292728;
 }
 
 .footer-section ul {

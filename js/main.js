@@ -6,9 +6,9 @@
 // Sticky Nav
 
 jQuery(function($) {
-    $('.navbar-custom').affix({
+    $('.respMenu').affix({
         offset: {
-            top: $('.navbar-custom').offset().top
+            top: $('.respMenu').offset().top
         }
     });
 });
