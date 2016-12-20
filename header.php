@@ -32,7 +32,7 @@
 		
 		
 			<?php do_action('before'); ?>
-			<header role="banner">
+			<header class="header-wrap" role="banner">
 				<div class="header-mid-area">
 					<div class="container">
 						<div class="row row-with-vspace site-branding">
@@ -74,7 +74,7 @@
 				</div>
 				
 				<div class=" main-navigation">
-						<nav class="navbar navbar-custom" role="navigation">
+						<nav class="navbar navbar-custom" role="affix">
 							<div class="container">
 								<div class="row">
 									<div class="navbar-header">

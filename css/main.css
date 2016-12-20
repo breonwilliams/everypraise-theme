@@ -647,7 +647,7 @@ Header
 
 .header-mid-area {
 	padding: 15px 0;
-	background: #292728;
+	background: #fff;
 	color: #FFFFFF;
 }
 
@@ -680,7 +680,7 @@ Header
 	float: left;
 	position: relative;
 }
-.phone-number:after{content: "";
+.phone-number:after{content: "Ã¯â€šâ€¢";
 	display: inline-block;
 	float: left;
 	font-family: FontAwesome;
@@ -716,9 +716,9 @@ Header
 Navigation
 =========================== */
 .navbar {
-	border: none;
+	border-bottom: solid 1px #E5E4E1;
 	border-radius: 0;
-	background: #292728;
+	background: #fff;
 	z-index: 999;
 	width: 100%;
 	margin-bottom: 0;
@@ -797,7 +797,7 @@ nav.affix {
 }
 
 .navbar-custom .navbar-nav>li>a {
-	color: #fff;
+	color: #292728;
 }
 
 
@@ -807,7 +807,7 @@ nav.affix {
 .dropdown-menu>.active>a,
 .dropdown-menu>.active>a:focus,
 .dropdown-menu>.active>a:hover {
-	background:#292728;
+	background: #fff;
 	border: none;
 }
 
@@ -858,9 +858,9 @@ nav.affix {
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
 	border: none;
-	background: #292728;
+	background: #fff;
 	cursor: pointer;
-	color: #B6E0D8!important;
+	color: #0C7883!important;
 }
 
 .navbar-nav > li > a {
@@ -910,11 +910,13 @@ nav.affix {
 	font-weight:700;
 	border:none;
 	white-space: nowrap;
+	background-color: #0C7883;
 }
 
 .navbar-nav .dropdown-menu li > a:hover {
 	border:none;
-	background-color: #0C7883;
+	background-color: #0C7883!important;
+	color: #FFFFFF!important;
 }
 
 
@@ -927,7 +929,7 @@ nav.affix {
 
 .navbar .navbar-toggle .icon-bar,
 .navbar .navbar-toggle:focus .icon-bar {
-	background-color:#fff;
+	background-color:#292728;
 }
 
 
