@@ -202,7 +202,7 @@ h6 {
 	margin-top: 0;
 	margin-bottom: 10px;
 	font-weight: 400;
-	letter-spacing: -0.5px;
+	letter-spacing: 0.5px;
 	font-family: 'Abril Fatface', cursive;
 	color: #292728;
 }
@@ -286,7 +286,7 @@ h6 {
 	border: 1px solid #292728;
 	font-size: 18px;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	/*letter-spacing: 2px;*/
 	text-align: center;
 	padding: 20px 40px;
 }
