@@ -344,7 +344,7 @@
         right: 0;
         top: 0;
         cursor: pointer;
-        z-index: 12399994;
+        z-index: 999;
     }
     .button:after {
         position: absolute;
