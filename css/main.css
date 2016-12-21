@@ -735,6 +735,11 @@ Header
 	font-size: 14px;
 }
 .header-top-left{}
+
+.container.sermons.type-sermons {
+	padding: 0;
+}
+
 .top-message{float: left;
 	position: relative;}
 .top-message:after {
@@ -3559,7 +3564,7 @@ Footer
 }
 .copyright {
 	font-size: 14px;
-	padding: 20px 0;
+	padding: 10px 0;
 	background: #0C7883;
 	color: #FFFFFF;
 }
@@ -3646,6 +3651,11 @@ Footer
 .section-heading {
 	font-size: 58px;
 	line-height: 56px;
+}
+
+.section-heading.section-heading-sm {
+	font-size: 38px;
+	line-height: 36px;
 }
 
 .section-heading:after {
