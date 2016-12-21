@@ -330,7 +330,7 @@ h6 {
 	position: relative;
 	vertical-align: middle;
 	width: 50%;
-	border-top: 1px solid #B6E0D8;
+	border-top: 1px solid #292728;
 }
 
 .site-section__title::after {
@@ -374,7 +374,7 @@ dd, dt {
 }
 
 label{
-	color:#1c1c1c;
+	color:#292728;
 }
 
 .alignleft{
