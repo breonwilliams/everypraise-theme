@@ -7,7 +7,7 @@
 
 		<?php if ('post' == get_post_type()) { ?> 
 		<div class="entry-meta padbot-20">
-			<?php bootstrapBasicPostOn(); ?> 
+			Posted on <?php echo get_the_date('D, F jS, Y'); ?>
 		</div><!-- .entry-meta -->
 		<?php } //endif; ?> 
 	</header><!-- .entry-header -->
