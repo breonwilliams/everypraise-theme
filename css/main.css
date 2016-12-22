@@ -237,6 +237,13 @@ h6 {
 	letter-spacing: -0.2px;
 }
 
+hr {
+	margin-top: 20px;
+	margin-bottom: 0;
+	border: 0;
+	border-top: 1px solid #292728;
+}
+
 #fittext1, #fittext2, #fittext3, #fittext4 {
 	line-height: normal;
 }
