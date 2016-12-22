@@ -339,7 +339,7 @@ h6 {
 }
 
 .title-medium {
-	font-family: "Montserrat",sans-serif;
+	font-family: 'Abril Fatface', cursive;
 	font-size: 23px;
 	margin: 0 0 20px;
 	line-height: 28px;
@@ -1729,7 +1729,7 @@ Hover border color
 .nav-tabs > li > a {
 	border: none;
 	border-radius: 0;
-	font-family:"Montserrat",sans-serif;
+	font-family: 'Karla', sans-serif;
 	font-size:12px;
 	color:#3b3b3b;
 	border-top:2px solid #3b3b3b;
