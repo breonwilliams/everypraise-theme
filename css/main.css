@@ -37,7 +37,7 @@ Typography
 body {
 	background:#fff;
 	font-family: 'Karla', sans-serif;
-	font-size:18px;
+	font-size:16px;
 	line-height:28px;
 	color:#292728;
 	-webkit-font-smoothing: antialiased;
@@ -2134,6 +2134,108 @@ Form
 	-o-transition: none;
 	transition: none;
 }
+
+/***************** Widget Lists ******************/
+.widget_pages ul,
+.widget_categories ul,
+.widget_archive ul,
+.widget_meta ul,
+.widget_recent_comments ul,
+.widget_recent_entries ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.widget_pages ul ul,
+.widget_categories ul ul,
+.widget_archive ul ul,
+.widget_meta ul ul,
+.widget_recent_comments ul ul,
+.widget_recent_entries ul ul {
+	margin: 0 0 -4px;
+	padding: 4px 0 0 10px;
+}
+.widget_pages ul li,
+.widget_categories ul li,
+.widget_archive ul li,
+.widget_meta ul li,
+.widget_recent_comments ul li,
+.widget_recent_entries ul li {
+	margin: 0;
+	padding: 8px 2px 8px 0;
+	border-top: solid 1px rgba(0,0,0,.1);
+}
+.widget_pages ul li:first-child,
+.widget_categories ul li:first-child,
+.widget_archive ul li:first-child,
+.widget_meta ul li:first-child,
+.widget_recent_comments ul li:first-child,
+.widget_recent_entries ul li:first-child {
+	border-top: none;
+}
+.widget_pages ul li:before,
+.widget_categories ul li:before,
+.widget_archive ul li:before,
+.widget_meta ul li:before,
+.widget_recent_comments ul li:before,
+.widget_recent_entries ul li:before {
+	content: none;
+}
+.widget_pages ul li a,
+.widget_categories ul li a,
+.widget_archive ul li a,
+.widget_meta ul li a,
+.widget_recent_comments ul li a,
+.widget_recent_entries ul li a {
+	outline: none;
+}
+.widget_pages .post-date,
+.widget_categories .post-date,
+.widget_archive .post-date,
+.widget_meta .post-date,
+.widget_recent_comments .post-date,
+.widget_recent_entries .post-date {
+	display: block;
+	margin: -3px 0 0;
+}
+.border_list {
+	padding: 0;
+}
+.border_list li {
+	border-top-width: 1px;
+	border-top-style: solid;
+	padding: 8px 0;
+}
+.border_list li:before {
+	content: none;
+}
+.border_list li:first-child {
+	border-top-width: 0;
+	border-top-style: solid;
+}
+.widget_recent_comments ul li,
+.widget_recent_entries ul li {
+	padding: 15px 0;
+}
+.widget_recent_comments ul li:first-child,
+.widget_recent_entries ul li:first-child {
+	padding-top: 0;
+}
+.widget_recent_comments ul li:last-child,
+.widget_recent_entries ul li:last-child {
+	padding-bottom: 0;
+}
+.widget_categories ul li,
+.widget_archive ul li {
+	padding-left: 27px;
+}
+.widget_categories ul li:before,
+.widget_archive ul li:before {
+	content: '\e888';
+	left: 1px;
+	font-size: 12px;
+}
+
 
 /* Form Filter Dropdown */
 
