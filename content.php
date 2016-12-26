@@ -20,7 +20,7 @@
 	</div><!-- .entry-summary -->
 	<?php } else { ?> 
 	<div class="entry-content padbot-20">
-		<?php the_content(bootstrapBasicMoreLinkText()); ?> 
+		<?php the_excerpt(); ?>
 		<div class="clearfix"></div>
 		<?php 
 		/**
