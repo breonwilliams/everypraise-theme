@@ -2607,7 +2607,11 @@ img.rounded, .rounded {
 	padding-left: 0;
 	margin: 0;
 	list-style: none;
-	padding: 0;
+	padding: 5px 0;
+}
+
+.social-icon ul {
+	margin: 0;
 }
 
 .header-social .social-icon {
